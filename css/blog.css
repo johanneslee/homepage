@@ -31,6 +31,75 @@ body {
 	text-align: left;
 }
 
+.topbar {
+	display: inline;
+    right: 10%;
+	margin: 0;
+}
+
+.topbar ul {
+	position: absolute;
+	display: inline;
+    list-style-type: none;
+    top: 30%;
+	right: 10%;
+	margin: 0;
+}
+
+.topbar ul li {
+	display: inline;
+	font-size: 16px;
+	text-align: center;
+	margin: 8px;
+}
+
+.topbar ul li a {
+	padding-bottom: 8px;
+	text-decoration: none;
+	color: #000000;
+}
+
+.current {
+	border-bottom: 3px solid #555555;	
+}
+
+.topbar ul li a:hover {
+	border-bottom: 3px solid #555555;
+}
+
+body {
+	margin: 0;
+}
+
+.header-wrap {
+	position: fixed;
+	width: 100%;
+	height: 80px;
+	z-index: 10;
+	top: 0;
+	font-family: sans-serif;
+	font-weight: 600;
+	background: #FFFFFF;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+.container {
+	position: relative;
+	width: 90%;
+	height: 70px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#logo {
+	position: absolute;
+	display: inline;
+	top: 23%;
+	margin: 0;
+	font-size: 28px;
+	text-align: left;
+}
+
 .header-nav {
 	display: inline;
     right: 10%;
