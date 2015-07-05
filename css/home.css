@@ -16,9 +16,8 @@ body {
 
 .container {
 	position: relative;
-  	min-width: 280px;
 	width: 90%;
-	height: 70px;
+	height: 100%;
 	margin: 0 auto;
 	padding: 0;
 }
