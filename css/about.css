@@ -71,7 +71,7 @@ button:focus {
 
 #list {
     list-style-type: none;
-    display: none;
+    display: block;
 	margin: 0;
 	padding: 0;
 	padding-top: 16px;
