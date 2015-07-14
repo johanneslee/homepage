@@ -131,6 +131,12 @@ button:focus {
 	margin-top: 268px; 
 }
 
+@media (min-width: 768px) {		
+	.content-wrap {
+		margin-top: 156px;
+	}
+}
+
 #main_container {
 	margin: 0 5%;
 	padding: 0;
