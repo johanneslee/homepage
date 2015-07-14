@@ -4,13 +4,16 @@
 	<title>Johannes Lee</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link type="text/css" rel="stylesheet" href="./css/about.css"/>
+	<script type="text/javascript" src="./js/jquery-1.11.3.js"></script>
+	<script type="text/javascript" src="./js/events.js"></script>
 </head>
-<body>
+<body class="body">
 	<div class="header-wrap">
 		<header class="container">
-    		<p id="logo">Johannes Lee</p>
+    		<div id="logo"><a href="/">Johannes Lee</a></div>
     		<nav class="topbar" role="navigation">
-      			<ul>
+      			<button id="menu">Menu</button>
+      			<ul id="list">
         			<li><a href="/">Home</a></li>
         			<li><a class="current" href="/about">About</a></li>
      		   		<li><a href="/projects">Projects</a></li>
@@ -20,8 +23,20 @@
 		</header>
 	</div>
 	<div class="content-wrap">
-		<main class="container" role="main">
-			
+		<main class="container" id="main_container" role="main">
+			<section class="about">
+				<div class="row1">
+    				<h1>Developer based in Korea</h1>
+					<p> to be a versatile developer, I'm trying to filling homepage with a lot of projects</p>
+				</div>
+				<div class="row2">
+    				<p>I¡¯m majoring in computer engineering. I¡¯ve learned so many programming language, HTML, CSS, Javascript, J-query, Node.js, JSP, Ms-sql, Java, C, C## and Python.</p>
+    				<br><br>
+    				<p>I love music. I can playing a piano. you can usually find me performing all around Seoul piano is set.</p>
+					<br><br>
+    				<p>For more information about me - I¡¯m on </p><a href="http://instagram.com/pro9ram.er">Instagram.</a></p>
+				</div>
+			</section>
 		</main>
 	</div>
 </body>

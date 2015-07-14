@@ -4,13 +4,16 @@
 	<title>Johannes Lee</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link type="text/css" rel="stylesheet" href="./css/projects.css"/>
+	<script type="text/javascript" src="./js/jquery-1.11.3.js"></script>
+	<script type="text/javascript" src="./js/events.js"></script>
 </head>
-<body>
+<body class="body">
 	<div class="header-wrap">
 		<header class="container">
-    		<p id="logo">Johannes Lee</p>
+    		<div id="logo"><a href="/">Johannes Lee</a></div>
     		<nav class="topbar" role="navigation">
-      			<ul>
+      			<button id="menu">Menu</button>
+      			<ul id="list">
         			<li><a href="/">Home</a></li>
         			<li><a href="/about">About</a></li>
      		   		<li><a class="current" href="/projects">Projects</a></li>
@@ -20,7 +23,7 @@
 		</header>
 	</div>
 	<div class="content-wrap">
-		<main class="container" role="main">
+		<main class="container" id="main_container" role="main">
 			
 		</main>
 	</div>
