@@ -20,7 +20,7 @@ button:focus {
 }
 
 .container {
-	margin: 0 5%;
+	margin: 0 auto;
 	padding: 0;
 	width: 90%;
 	height: 100%;
@@ -129,6 +129,7 @@ button:focus {
 	
 	#list {
     	display: block !important;
+		top: 0;
 		border: 0;
 		padding: 0;
 	}
@@ -141,31 +142,34 @@ button:focus {
 	
 .content-wrap {
 	margin-top: 112px; 
+	width: 100%;
+	height: 100%;
+	background-color: #FFFFFF;	
 }
 
 #main_container {
-	margin: 0 5%;
+	margin: 0 auto;
 	padding: 0;
 	width: 90%;
 	height: 100%;
-    text-align: left;
+	text-align: left;
 }
 
 .row1 {
+	margin: 0;
+	padding: 0;
 	padding-left: 16px;
 	border-left: 2px solid #000000;
 }
 
-.row1 h1 {
-	margin: 0;
-	text-align: left;
+.row1 strong {
 	font-size: 24px;
 }
 
 .row1 p {
 	margin: 0;
+	padding: 0;
 	font-size: 16px;
-	text-align: left;
 }
 
 .row2 {

@@ -118,6 +118,7 @@ button:focus {
 	
 	#list {
     	display: block !important;
+		top: 0;
 		border: 0;
 		padding: 0;
 	}
@@ -133,9 +134,9 @@ button:focus {
 }
 
 #main_container {
-	margin: 0 5%;
+	margin: 0 auto;
 	padding: 0;
 	width: 90%;
 	height: 100%;
-    text-align: left;
+	text-align: left;
 }
