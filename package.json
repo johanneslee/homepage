@@ -1,9 +1,16 @@
-"engines":{
-	"node":"0.12.x",
-	"npm":"2.11.x"
-}
-
-"scripts": {
-	"start": "node index.js"
-	"postinstall": "./js/libs/jquery-1.11.3.js install"
+{
+  "name": "johanneslee",
+  "version": "1.0.0",
+  "description": "my homepage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@heroku.com:johanneslee.git"
+  },
+  "author": "johanneslee",
+  "license": "ISC"
 }
