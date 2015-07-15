@@ -1,0 +1,9 @@
+"engines":{
+	"node":"0.12.x",
+	"npm":"2.11.x"
+}
+
+"scripts": {
+	"start": "node index.js"
+	"postinstall": "./js/libs/jquery-1.11.3.js install"
+}
