@@ -50,15 +50,14 @@ button:focus {
 }
 
 #menu {
-	position: fixed;
+	position: relative;
+	display: block;
 	z-index: 11;
 	border: 0;
 	border-radius: 20px;
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
-	top: 72px;
-	right: 50%;
-	transform: translateX(50%);
+	top: -16px;
 	width: 64px;
 	height: 32px;
   	line-height: 28px;
@@ -71,11 +70,13 @@ button:focus {
 
 #list {
     list-style-type: none;
+	position: relative;
     display: none;
 	margin: 0;
 	padding: 0;
-	padding-top: 16px;
+	padding-top: 20px;
 	padding-bottom: 8px;
+	top: -32px;
 	border: 1px solid #CCCCCC;
 	background-color: #FFFFFF;
 }
