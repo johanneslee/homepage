@@ -71,7 +71,7 @@ button:focus {
 
 #list {
     list-style-type: none;
-    display: block;
+    display: none;
 	margin: 0;
 	padding: 0;
 	padding-top: 16px;
@@ -128,13 +128,7 @@ button:focus {
 }
 	
 .content-wrap {
-	margin-top: 268px; 
-}
-
-@media (min-width: 768px) {		
-	.content-wrap {
-		margin-top: 156px;
-	}
+	margin-top: 112px; 
 }
 
 #main_container {
