@@ -118,7 +118,7 @@ button:focus {
 	}
 }
 	
-@media (min-width: 800px) {		
+@media (min-width: 1024px) {		
 	.header-wrap {
 		height: 80px;
 	}
@@ -151,7 +151,7 @@ button:focus {
 	
 	#list li {
 		display: inline;
-		padding: 0 8px;
+		padding: 0 16px;
 	}
 }	
 	

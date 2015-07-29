@@ -118,7 +118,7 @@ button:focus {
 	}
 }
 	
-@media (min-width: 800px) {		
+@media (min-width: 1024px) {		
 	.header-wrap {
 		height: 80px;
 	}
@@ -151,7 +151,7 @@ button:focus {
 	
 	#list li {
 		display: inline;
-		padding: 0 8px;
+		padding: 0 16px;
 	}
 }	
 	
@@ -171,24 +171,34 @@ button:focus {
 	text-align: left;
 }
 
-.about strong {	
-	font-size: 24px;
-}
-
 .about div {
 	margin: 0;
 	padding: 0 16px;
 	border-left: 2px solid #000000;
 }
 
+.about strong {	
+	font-size: 20px;
+}
+
 .about p {
 	margin: 0;
 	padding: 0;
-	font-size: 16px;
+	font-size: 14px;
 }
 
 @media (min-width: 480px) {		
 	.content-wrap {
 		margin-top: 80px; 
+	}
+	
+	.about strong {
+		font-size: 24px;
+	}
+
+	.about p {
+		margin: 0;
+		padding: 0;
+		font-size: 16px;
 	}
 }
