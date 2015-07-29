@@ -6,7 +6,7 @@ function route(handle, pathname, response, postData) {
 	var pathext = path.extname(pathname);
 	if (typeof handle[pathname] === 'function') {
 		handle[pathname](response, postData);
-	} else if (pathext === '.js' || pathext === '.css' || pathext === '.jpg') {
+	} else if (pathext === '.js' || pathext === '.css' || pathext === '.jpg' || pathext === '.png') {
         	handle["/extFiles"](response, pathext, pathname, postData);
 	} else {		
 		console.log("No request handler found for " + pathname);

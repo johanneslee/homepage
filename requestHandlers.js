@@ -83,6 +83,16 @@ function extFiles(response, pathext, pathname, postData) {
 			});
 			console.log("Routed for jpg "+ pathname +" Successfully");
 			break;
+		case '.png':
+			fs.readFile(__dirname + pathname, function(error, data) {
+				if (error) {
+					throw error;
+				}
+				response.writeHead(200, {"Content-Type": "image/jpg"});
+				response.end(data, 'binary');
+			});
+			console.log("Routed for png "+ pathname +" Successfully");
+			break;
 	}
 }
 
