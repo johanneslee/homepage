@@ -202,3 +202,34 @@ button:focus {
 		font-size: 16px;
 	}
 }
+
+.footer-wrap {
+	position: fixed;
+	width: 100%;
+	height: 48px;
+	z-index: 10;
+	bottom: 0;
+	font-size: 12px;
+	border-top: 1px solid #CCCCCC;
+	background-color: #FFFFFF;
+}
+
+.footer-content {
+	display: block;
+	width: 280px;
+	height: 24px;
+	margin: 0 auto;
+	line-height: 24px;
+}
+
+@media (min-width: 480px) {
+	.footer-wrap {
+		height: 32px;
+	}
+	
+	.footer-content {
+		display: inline;
+		height: 32px;
+		line-height: 32px;
+	}
+}
