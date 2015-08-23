@@ -88,7 +88,7 @@ function extFiles(response, pathext, pathname, postData) {
 				if (error) {
 					throw error;
 				}
-				response.writeHead(200, {"Content-Type": "image/jpg"});
+				response.writeHead(200, {"Content-Type": "image/png"});
 				response.end(data, 'binary');
 			});
 			console.log("Routed for png "+ pathname +" Successfully");
