@@ -79,7 +79,8 @@ function extFiles(response, pathext, pathname, postData) {
 					throw error;
 				}
 				response.writeHead(200, {"Content-Type": "image/jpg"});
-				response.end(data, 'binary');
+				response.write(data, 'binary')
+				response.end();
 			});
 			console.log("Routed for jpg "+ pathname +" Successfully");
 			break;
@@ -89,7 +90,8 @@ function extFiles(response, pathext, pathname, postData) {
 					throw error;
 				}
 				response.writeHead(200, {"Content-Type": "image/png"});
-				response.end(data, 'binary');
+				response.write(data, 'binary')
+				response.end();
 			});
 			console.log("Routed for png "+ pathname +" Successfully");
 			break;
