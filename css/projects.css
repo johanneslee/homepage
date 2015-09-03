@@ -11,7 +11,7 @@ button:focus {
 .header-wrap {
 	position: fixed;
 	width: 100%;
-	height: 112px;
+	height: 96px;
 	z-index: 10;
 	top: 0;
 	font-weight: 600;
@@ -31,8 +31,8 @@ button:focus {
 	margin: 0;
 	padding: 0;
   	width: 100%;
-  	height: 80px;
-  	line-height: 80px;
+  	height: 64px;
+  	line-height: 64px;
 	font-size: 28px;
 }
 
@@ -45,7 +45,7 @@ button:focus {
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	height: 156px;
+	height: 140px;
   	line-height: 28px;
 }
 
@@ -55,7 +55,7 @@ button:focus {
 	width: 64px;
 	margin: 0 auto;
 	padding: 0;
-	top: -32px;
+	top: -16px;
 	height: 32px;
 	background: #FFFFFF;
 }
@@ -156,7 +156,7 @@ button:focus {
 }	
 	
 .content-wrap {
-	margin-top: 112px;
+	margin-top: 96px;
 	margin-bottom: 48px;  
 	width: 100%;
 	height: 100%;
