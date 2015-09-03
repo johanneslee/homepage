@@ -1,4 +1,5 @@
 var fs = require('fs');
+var path = require('path');
 
 function home(response, postData) {
 	console.log("Request handler 'home' was called.");
@@ -48,53 +49,40 @@ function blog(response, postData) {
 	});
 }
 
-function extFiles(response, pathext, pathname, postData) {
+function extFiles(response, pathname, postData) {
     console.log("Request handler 'extFiles' was called.");
+
+    var filePath = '.' + pathname;
+	var pathext = path.extname(pathname);
+	var contentType = 'text/html';
+    
     switch(pathext) {
-        case '.css':
-            fs.readFile(__dirname + pathname, function(error, data) {
-                if (error) {
-                	throw error;
-                }
-                response.writeHead(200, {"Content-Type": "text/css"});
-            	response.write(data);
-            	response.end();
-            });
-            console.log("Routed for CSS "+ pathname +" Successfully");
-            break;
         case '.js':
-            fs.readFile(__dirname + pathname, function(error, data) {
-                if (error) {
-                	throw error;
-                }
-                response.writeHead(200, {"Content-Type": "text/javascript"});
-            	response.write(data);
-            	response.end();
-            });
-            console.log("Routed for Javascript "+ pathname +" Successfully");
+        	contentType = 'text/javascript';
+            break;
+        case '.css':
+        	contentType = 'text/css';
             break;
 		case '.jpg':
-			fs.readFile(__dirname + pathname, function(error, data) {
-				if (error) {
-					throw error;
-				}
-				response.writeHead(200, {"Content-Type": "image/jpg"});
-				response.write(data, 'binary')
+        	contentType = 'image/jpg';
+            break;
+	}
+    
+    if(filePath) {
+		fs.readFile(filePath, function(error, content) {
+			if (error) {
+				response.writeHead(500);
 				response.end();
-			});
-			console.log("Routed for jpg "+ pathname +" Successfully");
-			break;
-		case '.png':
-			fs.readFile(__dirname + pathname, function(error, data) {
-				if (error) {
-					throw error;
-				}
-				response.writeHead(200, {"Content-Type": "image/png"});
-				response.write(data, 'binary')
-				response.end();
-			});
-			console.log("Routed for png "+ pathname +" Successfully");
-			break;
+			}
+			else {
+				response.writeHead(200, {'Content-Type': contentType});
+				response.end(content, 'utf-8');
+			}
+		});
+	}
+	else {
+		response.writeHead(404);
+		response.end();
 	}
 }
 
