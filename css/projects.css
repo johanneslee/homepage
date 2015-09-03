@@ -190,7 +190,7 @@ button:focus {
 
 .row {
 	margin: 0;
-	padding-top: 32px;
+	padding: 0;
 }
 
 .row p {
