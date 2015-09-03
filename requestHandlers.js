@@ -7,9 +7,8 @@ function home(response, postData) {
 		if (error) {
 			throw error;
 		}
-		response.writeHead(404, {"Content-Type": "text/html"});
-	    response.write(html);
-	    response.end();
+		response.writeHead(200, {"Content-Type": "text/html"});
+		response.end(html, 'utf-8');
 	});
 }
 
@@ -19,9 +18,8 @@ function about(response, postData) {
 		if (error) {
 			throw error;
 		}
-		response.writeHead(404, {"Content-Type": "text/html"});
-	    response.write(html);
-	    response.end();
+		response.writeHead(200, {"Content-Type": "text/html"});
+		response.end(html, 'utf-8');
 	});
 }
 
@@ -31,9 +29,8 @@ function projects(response, postData) {
 		if (error) {
 			throw error;
 		}
-		response.writeHead(404, {"Content-Type": "text/html"});
-	    response.write(html);
-	    response.end();
+		response.writeHead(200, {"Content-Type": "text/html"});
+		response.end(html, 'utf-8');
 	});
 }
 
@@ -43,9 +40,8 @@ function blog(response, postData) {
 		if (error) {
 			throw error;
 		}
-		response.writeHead(404, {"Content-Type": "text/html"});
-	    response.write(html);
-	    response.end();
+		response.writeHead(200, {"Content-Type": "text/html"});
+		response.end(html, 'utf-8');
 	});
 }
 
@@ -65,6 +61,9 @@ function extFiles(response, pathname, postData) {
             break;
 		case '.jpg':
         	contentType = 'image/jpg';
+            break;
+		case '.png':
+        	contentType = 'image/png';
             break;
 	}
     
