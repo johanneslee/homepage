@@ -9,20 +9,35 @@ $(document).ready(function() {
 	});
 	
 	$('#project1').click(function() {
-		$('#homepage').slideUp();
-		$('#enneagram').slideUp();
-		$('#website').slideDown();
+		if($('#website').is(':visible')) {
+			$('#website').slideUp();
+		}
+		else {
+			$('#homepage').slideUp();
+			$('#enneagram').slideUp();
+			$('#website').slideDown();
+		}
 	});
 	
 	$('#project2').click(function() {
-		$('#website').slideUp();
-		$('#enneagram').slideUp();
-		$('#homepage').slideDown();
+		if($('#homepage').is(':visible')) {
+			$('#homepage').slideUp();
+		}
+		else {
+			$('#website').slideUp();
+			$('#enneagram').slideUp();
+			$('#homepage').slideDown();
+		}
 	});
 	
 	$('#project3').click(function() {
-		$('#website').slideUp();
-		$('#homepage').slideUp();
-		$('#enneagram').slideDown();
+		if($('#enneagram').is(':visible')) {
+			$('#enneagram').slideUp();
+		}
+		else {
+			$('#website').slideUp();
+			$('#homepage').slideUp();
+			$('#enneagram').slideDown();
+		}
 	});
 });

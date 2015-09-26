@@ -187,7 +187,6 @@ button:focus {
 
 .row {
 	margin: 0;
-	margin-top: 16px;
 	padding: 0;
 }
 
@@ -246,13 +245,13 @@ button:focus {
 #detail_container {
 	margin: 0;
 	width: 97.4%;
-	padding-top: 196px;
+	padding-top: 192px;
 	text-align: left;
 }
 	
 @media (min-width: 480px) {		
 	#detail_container {
-		padding-top: 216px;
+		padding-top: 204px;
 	}
 }
 
