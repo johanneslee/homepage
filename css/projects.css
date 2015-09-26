@@ -20,7 +20,7 @@ button:focus {
 }
 
 .container {
-	margin: 0 5%;
+	margin: 0 auto;
 	padding: 0;
 	width: 90%;
 	height: 100%;
@@ -164,11 +164,8 @@ button:focus {
 }
 
 #main_container {
-	margin: 0 auto;
-	padding: 0;
 	padding-top: 32px;
-	width: 90%;
-	height: 100%;
+	height: 300px;
 	text-align: left;
 }
 
@@ -190,33 +187,33 @@ button:focus {
 
 .row {
 	margin: 0;
+	margin-top: 16px;
 	padding: 0;
 }
 
 .row p {
-	font-family: Batang;
 	font-size: 12px;
 }
 
-.one-third.column {
-	width: 29%;
-	margin: 0 1.35%;
+.one-third {
+	width: 30%;
+	margin: 0 1.24%;
 	margin-top: 32px;
 	float: left;
 	text-align: center;
 	border: 1px solid #CCCCCC;
 }
 
-.one-third.column h3 {
+.one-third h3 {
 	line-height: 24px;
 	font-size: 16px;
 }
 
-.one-third.column p:hover {
+.one-third p:hover {
 	color: #555555;
 }
 
-.one-third.column img {
+.one-third img {
 	width: 80%;
 }
 
@@ -236,14 +233,51 @@ button:focus {
 		font-size: 16px;
 	}
 
-	.one-third.column h3 {
+	.one-third h3 {
 		line-height: 20px;
 		font-size: 20px;
 	}
 
-	.one-third.column img {
+	.one-third img {
 		width: 100px;
 	}
+}
+
+#detail_container {
+	margin: 0;
+	width: 97.4%;
+	padding-top: 196px;
+	text-align: left;
+}
+	
+@media (min-width: 480px) {		
+	#detail_container {
+		padding-top: 216px;
+	}
+}
+
+.column {
+	margin-left: 1.35%;
+	margin-top: 32px;
+	padding: 16px;
+	padding-top: 0;
+	line-height: 8px;
+	display: none;
+	border: 1px solid #CCCCCC;
+}
+
+.column h3 {
+	line-height: 32px;
+}
+
+.column a {
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;
+}
+
+.column a:hover {
+	color: #555555;
 }
 
 .footer-wrap {
