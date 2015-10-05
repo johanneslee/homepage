@@ -40,4 +40,24 @@ $(document).ready(function() {
 			$('#enneagram').show();
 		}
 	});
+	
+	$('#pianomusic').click(function() {
+		if($('#piano').is(':visible')) {
+			$('#piano').hide();
+		}
+		else {
+			$('#drawing').hide();
+			$('#piano').show();
+		}
+	});
+	
+	$('#artdrawing').click(function() {
+		if($('#drawing').is(':visible')) {
+			$('#drawing').hide();
+		}
+		else {
+			$('#piano').hide();
+			$('#drawing').show();
+		}
+	});
 });

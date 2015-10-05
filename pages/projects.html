@@ -3,6 +3,7 @@
 <head>
 	<title>Johannes Lee</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link type="text/css" rel="stylesheet" href="./css/style.css"/>
 	<link type="text/css" rel="stylesheet" href="./css/projects.css"/>
 	<script src="./js/libs/jquery-1.11.3.js"></script>
 	<script type="text/javascript" src="./js/events.js"></script>
@@ -12,7 +13,7 @@
 		<header class="container">
     		<div id="logo"><a href="/">Johannes Lee</a></div>
       		<button id="menu"><img src="./img/icon_menu.png"></button>
-    		<nav class="topbar" role="navigation">
+    		<nav>
       			<ul id="list">
         			<li><a href="/">Home</a></li>
         			<li><a href="/about">About</a></li>
@@ -23,57 +24,54 @@
 		</header>
 	</div>
 	<div class="content-wrap">
-		<div class="container" id="main_container" role="main">
-			<section class="about">
-				<div>
-    				<strong>This is my featured projects</strong><br>
-					<p>These are what I've made and been developing</p>
+		<div class="container">
+			<section>
+				<div class="about">
+    				<p><strong>This is my featured projects</strong><br>These are what I've made and been developing</p>
 				</div>
 			</section>
-			<section class="content">
-				<div class="row">
+			<section>
+				<div class="row1">
       				<article class="one-third">
       					<p><strong>Homepage</strong></p>
       					<img src="./img/project_1.png">
-  	    				<p class="project" id="project1"><strong>>More</strong></p>
+  	    				<p class="project" id="project1"><strong>More</strong></p>
     	  			</article>    
       				<article class="one-third">
       					<p><strong>Website</strong></p>
       					<img src="./img/project_2.png">
-  	    				<p class="project" id="project2"><strong>>More</strong></p>
+  	    				<p class="project" id="project2"><strong>More</strong></p>
     	  			</article>  
       				<article class="one-third">
       					<p><strong>Mobile App</strong></p>
       					<img src="./img/project_3.png">
-      					<p class="project" id="project3"><strong>>More</strong></p>
+      					<p class="project" id="project3"><strong>More</strong></p>
   	    			</article>  
     			</div>
     		</section>
-		</main>
-		<div class="container" id="detail_container" role="detail">
-			<section class="detail">
-				<div class="row">
-      				<article class="column" id="website">
+    		<section>
+				<div class="row2">
+      				<article class="one" id="website">
       					<p><strong>Website</strong></p>
       					<p>It has CRUD board, and Login module.</p>
     					<p>Language: JSP/Servlet and Oracle</p>
-    					<p><strong><a href="https://github.com/johanneslee/website">>Github repository</a></strong></p>
+    					<p><strong><a href="https://github.com/johanneslee/website">Github repository</a></strong></p>
     	  			</article>    
-      				<article class="column" id="homepage">
+      				<article class="one" id="homepage">
       					<p><strong>Homepage</strong></p>
       					<p>It's introducing my profile and featured projects.</p>
     					<p>Language: Node.js, jQuery, HTML5 and CSS3</p>
-    					<p><strong><a href="https://github.com/johanneslee/homepage">>Github repository</a></strong></p>
+    					<p><strong><a href="https://github.com/johanneslee/homepage">Github repository</a></strong></p>
     	  			</article>  
-      				<article class="column" id="enneagram">
+      				<article class="one" id="enneagram">
       					<p><strong>Mobile App</strong></p>
       					<p>It's the Enneagram testing mobile app.</p>
     					<p>Language: Java and Android</p>
-    					<p><strong><a href="https://github.com/johanneslee/enneagram">>Github repository</a></strong></p>
+    					<p><strong><a href="https://github.com/johanneslee/enneagram">Github repository</a></strong></p>
   	    			</article>  
     			</div>
     		</section>
-		</detail>
+		</div>
 	</div>
 	<div class="footer-wrap">
 		<footer role="contentinfo" class="container">
