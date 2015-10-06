@@ -16,3 +16,9 @@
 .row a:hover {
 	color: #555555;
 }
+
+@media (min-width: 480px) {
+	.row p {
+		font-size: 14px;
+	}
+}

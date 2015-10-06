@@ -60,4 +60,19 @@ $(document).ready(function() {
 			$('#drawing').show();
 		}
 	});
+	
+	$('#all').click(function() {
+		$('.piano').show();
+		$('.drawing').show();
+	});
+	
+	$('#piano').click(function() {
+		$('.piano').show();
+		$('.drawing').hide();
+	});
+	
+	$('#drawing').click(function() {
+		$('.piano').hide();
+		$('.drawing').show();
+	});	
 });

@@ -1,20 +1,19 @@
-.tag {padding: 0 8px; float: left; width: 40px; text-align: left; border: 1px solid #CCCCCC;}
+.tag {padding: 0 8px; float: left; width: 60px; text-align: left; border: 1px solid #CCCCCC;}
 .tag p {line-height: 8px; font-size: 12px;}
 
-.frame {margin-left: 56px;}
-.frame img {width: 80%;}
+#all {text-decoration: underline;}
 
-article {display: inline-block; margin-bottom: 8px; width: 92.5%; border: 1px solid #CCCCCC;}
-article p {line-height: 8px;}
+.frame {margin-left: 76px;}
 
-@media (min-width: 480px) {		
-	article {width: 45%;}
+article {display: inline-block; margin: 0 2%; margin-bottom: 8px; padding: 8px; padding-bottom: 0; width: 80%; border: 1px solid #CCCCCC;}
+article p {line-height: 4px;}
+article img {width: 80%;}
+article iframe {width: 80% !important; height: auto !important;}
+
+@media (min-width: 480px) {
+	article {width: 40%; margin: 0 1.5%; margin-bottom: 8px;}
 }
 
-@media (min-width: 720px) {		
-	article {width: 30%;}
-}
-
-@media (min-width: 1024px) {		
-	article {width: 22.5%;}
+@media (min-width: 720px) {
+	article {width: 20%; margin: 0 0.5%; margin-bottom: 8px;}
 }
