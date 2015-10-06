@@ -64,15 +64,24 @@ $(document).ready(function() {
 	$('#all').click(function() {
 		$('.piano').show();
 		$('.drawing').show();
+		$('#all').css('text-decoration', 'underline');
+		$('#piano').css('text-decoration', 'none');
+		$('#drawing').css('text-decoration', 'none');
 	});
 	
 	$('#piano').click(function() {
 		$('.piano').show();
 		$('.drawing').hide();
+		$('#all').css('text-decoration', 'none');
+		$('#piano').css('text-decoration', 'underline');
+		$('#drawing').css('text-decoration', 'none');
 	});
 	
 	$('#drawing').click(function() {
 		$('.piano').hide();
 		$('.drawing').show();
+		$('#all').css('text-decoration', 'none');
+		$('#piano').css('text-decoration', 'none');
+		$('#drawing').css('text-decoration', 'underline');
 	});	
 });
