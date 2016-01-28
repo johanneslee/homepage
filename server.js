@@ -1,7 +1,13 @@
+/*
 var http = require("http");
 var url = require("url");
+*/
+
+var express = require('express');
+var bodyParser = require('body-parser');
 var port = Number(process.env.PORT || 5000);
 
+/*
 function start(route, handle) {
 	function onRequest(request, response) {
         var postData = "";
@@ -28,5 +34,16 @@ function start(route, handle) {
 	http.createServer(onRequest).listen(port);
 	console.log("Server has started.");
 }
+*/
 
-exports.start = start;
+var app = express();
+app.engine('.html', require('ejs').__express)
+   .set('views', __dirname + '/views')
+   .set('view engine', 'html');
+app.use(bodyParser.urlencoded({ extended: true }))
+   .use(bodyParser.json());
+
+require('./router')(app);
+app.listen(port);
+
+//exports.start = start;
